@@ -1,0 +1,183 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1778127982850
+  modified: 1778127982850
+  description: ""
+collection:
+  - url: http://localhost:8080/api/sorcerers
+    name: Create Sorcerer
+    meta:
+      id: req_5ff8641beba240cc90c7d9f64231cf85
+      created: 1778128062031
+      modified: 1778128333130
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062032
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "name": "Nanami Kento",
+          "grade": "Grade 1",
+          "cursedTechnique": "Ratio Technique",
+          "school": "Jujutsu High",
+          "cursedEnergy": "Cursed Energy",
+          "isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers
+    name: Get All Sorcerers
+    meta:
+      id: req_55e3c5e01d9d4c95afe07f5d08c7721c
+      created: 1778128062041
+      modified: 1778128062041
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062041
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/8c9566de-a511-4008-8be2-473cf61a9f9e
+    name: Get Sorcerer By ID
+    meta:
+      id: req_0c18a8e32abc4ada91c85abba17f162c
+      created: 1778128062043
+      modified: 1778128247342
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062043
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/{{id}}
+    name: Update Sorcerer
+    meta:
+      id: req_562a4f94ecde451f9d3156fbf6d299c7
+      created: 1778128062044
+      modified: 1778128062044
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062044
+    method: PUT
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/67df6d74-fee3-4ee0-bf4e-89906051fcb2
+    name: Delete Sorcerer
+    meta:
+      id: req_b9855e9ea97349378239908436a696ba
+      created: 1778128062045
+      modified: 1778128372647
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062045
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/school/Jujutsu High
+    name: Get Sorcerers By School
+    meta:
+      id: req_a034bf0aac264ddba36fceec7fce6ca4
+      created: 1778128062046
+      modified: 1778128221206
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062046
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/grade/Special Grade
+    name: Get Sorcerers By Grade
+    meta:
+      id: req_515f1657bca5412c8fff7d3b23d0321e
+      created: 1778128062047
+      modified: 1778128198522
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062047
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/sorcerers/active
+    name: Get Active Sorcerers
+    meta:
+      id: req_c286bc60c9c3412fb05aba709f76ad6d
+      created: 1778128062048
+      modified: 1778128062048
+      isPrivate: false
+      description: ""
+      sortKey: -1778128062048
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778127996025
+    modified: 1778127996025
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778127996023
+    modified: 1778127996023
+    isPrivate: false
